@@ -1,14 +1,27 @@
-.baselayout{
-    margin: 5% 15%;
+.baselayout {
+  margin: 5% 15%;
 }
 
-.order-summary{
-    text-align: left;
-    color: grey;
-    font-size: 2vw;
-    padding:20px 0 5px;
+.order-summary {
+  text-align: left;
+  color: grey;
+  font-size: 2vw;
+  padding: 20px 0 5px;
+}
+.back-icon {
+}
+.segments {
+  display: flex;
 }
 
-.separator{
-    opacity: 0.4;
-} 
+.left-segment {
+  width: 68%;
+}
+
+.right-segment {
+  width: 32%;
+  border: 1px solid #80808059;
+  box-shadow: 2px 2px 2px #80808059;
+  -webkit-box-shadow: 2px 2px 2px #80808059;
+  -moz-box-shadow: 2px 2px 2px #80808059;
+}

@@ -1,0 +1,44 @@
+
+.total-container{
+
+}
+
+.total-head{
+    text-align: left;
+    padding: 0 10px;
+}
+
+.total-details{
+    display: flex;
+    color: grey;
+}
+
+.detail-item-name{
+    text-align: left;
+    width: 60%;
+    padding: 5px 10px;
+}
+
+.detail-item-value{
+    text-align: right;
+    width: 40%;
+    padding: 5px 10px;
+}
+
+.footer{
+    background-color: #a9a9a954;
+    color: grey;
+    margin: 15px 0 0;
+    padding: 15px 5px;
+    display: flex;
+}
+
+.order-total{
+    width: 35%;
+}
+
+.order-total-value{
+    text-align: right;
+    font-weight: bold;
+    width: 63%;
+}
