@@ -46,7 +46,7 @@ function Itemstable(props) {
   };
 
   return (
-    <>
+    <div className="over-handler">
       <hr className="separator" />
       {data.length ? (
         <>
@@ -59,6 +59,7 @@ function Itemstable(props) {
             <span className="col3">Price</span>
           </div>
           <hr className="separator" />
+          <br/>
           {data.map((item, index) => (
             <div className="item-row" key={item.id}>
               <ItemCard
@@ -87,7 +88,7 @@ function Itemstable(props) {
           </span>
         </div>
       )}
-    </>
+    </div>
   );
 }
 export default Itemstable;

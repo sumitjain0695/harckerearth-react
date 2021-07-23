@@ -25,6 +25,19 @@
   padding: 0px 20px;
 }
 
+@media (max-width: 500px) {
+  .col1 {
+    width: 50%;
+    padding: 0 10px 0 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .over-handler {
+    min-width: 500px;
+  }
+}
+
 .item-row {
   display: flex;
   align-items: center;

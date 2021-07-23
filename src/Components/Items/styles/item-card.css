@@ -4,10 +4,17 @@
   padding: 5px 10px 3px 0px;
   border: 1px solid #80808059;
   box-shadow: 2px 2px 2px #80808059;
-  margin: 5 px 20px 0 0;
+  margin: 5 px 20px 5px 0;
   -webkit-box-shadow: 2px 2px 2px #80808059;
   -moz-box-shadow: 2px 2px 2px #80808059;
 }
+
+@media(max-width:500px){
+    .card-container{
+        width: 47%;
+        margin: 5px 10px 5px 0;
+    }
+  }
 
 .image {
   vertical-align: middle;
