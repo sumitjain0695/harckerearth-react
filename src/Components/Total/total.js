@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../../Context/data-context";
 import "./total.css";
 
 function TotalCalc(props) {
-  const data = [`Items ${7}`, "Discount", "Type Discount"];
+  const KEYS = [`Items ${7}`, "Discount", "Type Discount"];
+  const { data } = useContext(DataContext);
   return (
     <div className="total-container">
+      {console.log("context value", data)}
       <p className="total-head">Total</p>
-      {data.map((item, index) => (
+      {KEYS.map((item, index) => (
         <div key={index} className="total-details">
           <span className="detail-item-name">{item}</span>
           <span className="detail-item-value">: {"$1355"}</span>

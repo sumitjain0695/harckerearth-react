@@ -1,51 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import DATA from "../../Constants/data";
+import { DataContext } from "../../Context/data-context";
 import ItemCard from "./item-card";
 import QuantityButton from "./quantity-btn";
 import "./styles/table.css";
 
 function Itemstable(props) {
-  const [data, setData] = useState(DATA);
+  const { data, updateData } = useContext(DataContext);
 
   useEffect(() => {
     const temp = [...DATA].map((item) => {
       return { ...item, quantity: 1 };
     });
-    setData(temp);
+    updateData(temp);
   }, []);
 
   const onDelete = (id) => {
     console.log(id);
-    setData(data.filter((item) => item.id !== id));
+    updateData(data.filter((item) => item.id !== id));
   };
 
   const increaseAmount = (ind) => {
     const temp = [...data];
     temp[ind].quantity += 1;
-    setData(temp);
+    updateData(temp);
   };
 
   const deccreaseAmount = (ind) => {
     const temp = [...data];
     if (temp[ind].quantity) {
       temp[ind].quantity -= 1;
-      setData(temp);
+      updateData(temp);
     }
   };
+
   const onReload = () => {
     const temp = [...DATA].map((item) => {
       return { ...item, quantity: 1 };
     });
-    setData(temp);
+    updateData(temp);
   };
 
   return (
     <>
-      {console.log("d", data)}
       <hr className="separator" />
       {data.length ? (
         <>
           <div className="columns">
+            {console.log("check renders in table", data)}
             <span className="col1">
               Items({data.reduce((a, b) => a + b.quantity, 0)})
             </span>
