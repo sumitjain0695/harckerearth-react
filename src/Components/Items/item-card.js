@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function ItemCard() {
-    return (
-        <div>
-
-        </div>
-    )
+function ItemCard(props) {
+  return (
+    <div>
+      <img src="" alt="" />
+      <span>{props.name && "item 1"}</span>
+      <span>&#10005;</span>
+    </div>
+  );
 }
 
-export default ItemCard
+export default ItemCard;
