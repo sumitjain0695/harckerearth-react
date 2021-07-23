@@ -9,10 +9,14 @@ function Itemstable(props) {
   const { data, updateData } = useContext(DataContext);
 
   useEffect(() => {
-    const temp = [...DATA].map((item) => {
-      return { ...item, quantity: 1 };
-    });
-    updateData(temp);
+    if (!localStorage.getItem("data")) {
+      const temp = [...DATA].map((item) => {
+        return { ...item, quantity: 1 };
+      });
+      updateData(temp);
+    } else {
+      updateData(JSON.parse(localStorage.getItem("data")));
+    }
   }, []);
 
   const onDelete = (id) => {
