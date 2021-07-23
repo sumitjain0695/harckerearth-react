@@ -1,28 +1,30 @@
 .btn-container {
-  width: 20%;
-  margin: 22px 20px 0;
+  width: 30%;
+  margin: 5px 0;
 }
 .btn-left {
   font-size: 24px;
   padding-right: 13px;
   cursor: pointer;
   color: grey;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn-mid {
-  padding: 15px 0;
-  display: inline-block;
-  margin: 0;
-  width: 50px;
-  border: 1px solid #80808059;
-  box-shadow: 1px 1px 1px #80808059;
-  -webkit-box-shadow: 1px 1px 1px #80808059;
-  -moz-box-shadow: 1px 1px 1px #80808059;
-}
-
-.btn-right {
-  font-size: 24px;
+  @@ -24,5 +30,11 @@
+    font-size: 24px;
   padding-left: 13px;
   cursor: pointer;
   color: grey;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
