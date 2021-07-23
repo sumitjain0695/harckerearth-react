@@ -1,0 +1,30 @@
+.card-container {
+  width: 57%;
+  text-align: left;
+  padding: 5px 10px 3px 0px;
+  border: 1px solid #80808059;
+  box-shadow: 2px 2px 2px #80808059;
+  margin: 20px 20px 0 0;
+  -webkit-box-shadow: 2px 2px 2px #80808059;
+  -moz-box-shadow: 2px 2px 2px #80808059;
+}
+
+.image {
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.item-name {
+  font-size: 20px;
+  color: grey;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.close-btn {
+  font-size: 24px;
+  color: grey;
+  float: right;
+  padding: 7px 0;
+  cursor: pointer;
+}

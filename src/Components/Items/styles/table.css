@@ -1,4 +1,35 @@
-.separator{
-    opacity: 0.4;
-    margin: 0;
+.separator {
+  opacity: 0.4;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  padding: 12px 10px;
+  color: grey;
+}
+
+.col1 {
+  width: 60%;
+  text-align: left;
+  padding: 0 20px 0 0;
+}
+
+.col2 {
+  width: 20%;
+  padding: 0px 20px;
+}
+
+.col3 {
+  width: 10%;
+  padding: 0px 20px;
+}
+
+.item-row {
+  display: flex;
+}
+.price-elem {
+  width: 10%;
+  margin: 20px 20px 0;
+  padding: 2.5% 0;
 }

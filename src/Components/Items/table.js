@@ -4,26 +4,23 @@ import QuantityButton from "./quantity-btn";
 import "./styles/table.css";
 function Itemstable() {
   return (
-    <div>
-        <hr className="separator" />
-      <div>
-        <span>Items({})</span>
-        <span>Qty</span>
-        <span>Price</span>
+    <>
+      <hr className="separator" />
+      <div className="columns">
+        <span className="col1">Items({})</span>
+        <span className="col2">Qty</span>
+        <span className="col3">Price</span>
       </div>
+      <hr className="separator" />
+      <br />
       {[1].map((item, index) => (
-        <div>
-          <div>
-            <ItemCard />
-          </div>
-          <div>
-            <QuantityButton />
-          </div>
-          <div>{"$25"}</div>
+        <div className="item-row">
+          <ItemCard />
+          <QuantityButton />
+          <div className="price-elem">{"$25"}</div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
-
 export default Itemstable;
