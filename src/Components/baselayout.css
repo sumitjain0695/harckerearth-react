@@ -55,3 +55,21 @@
     overflow: auto;
   }
 }
+.alert {
+  padding: 20px;
+  background-color: #f4433678;
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}

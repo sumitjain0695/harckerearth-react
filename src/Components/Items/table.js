@@ -20,8 +20,12 @@ function Itemstable(props) {
   }, []);
 
   const onDelete = (id) => {
-    console.log(id);
     updateData(data.filter((item) => item.id !== id));
+    document.getElementById("alert").style.display = "block";
+    var time = setTimeout(function () {
+      document.getElementById("alert").style.display = "none";
+      clearTimeout(time);
+    }, 1000);
   };
 
   const increaseAmount = (ind) => {
@@ -32,9 +36,11 @@ function Itemstable(props) {
 
   const deccreaseAmount = (ind) => {
     const temp = [...data];
-    if (temp[ind].quantity) {
+    if (temp[ind].quantity > 1) {
       temp[ind].quantity -= 1;
       updateData(temp);
+    } else {
+      onDelete(data[ind].id);
     }
   };
 
@@ -59,7 +65,7 @@ function Itemstable(props) {
             <span className="col3">Price</span>
           </div>
           <hr className="separator" />
-          <br/>
+          <br />
           {data.map((item, index) => (
             <div className="item-row" key={item.id}>
               <ItemCard
