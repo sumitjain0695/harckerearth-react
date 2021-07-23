@@ -35,6 +35,8 @@
 
 .order-total{
     width: 35%;
+    text-align: left;
+    padding: 0 5px;
 }
 
 .order-total-value{
