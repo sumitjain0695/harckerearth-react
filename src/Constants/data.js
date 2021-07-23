@@ -1,4 +1,4 @@
-export const DATA = [
+const DATA = [
   {
     id: 9090,
     name: "Item1",
@@ -57,10 +57,12 @@ export const DATA = [
   },
   {
     id: 9097,
-    name: "tem8",
+    name: "Item8",
     price: 350,
     discount: 18,
     type: "fiction",
     img_url: "https://place-hold.it/40.jpg",
   },
 ];
+
+export default DATA;
