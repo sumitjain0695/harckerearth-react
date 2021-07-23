@@ -1,16 +1,19 @@
 import React from 'react'
 import Itemstable from './Items/table'
 import TotalCalc from './Total/total'
+import './baselayout.css'
 
 function Baselayout(props) {
     return (
-        <div>
-            <p><span>&#8249;</span> Order Summary</p>
-            <hr/>
+        <div className="baselayout">
+            <div className="order-summary">
+                <span className="back-icon">&#8249;</span> <span>Order Summary</span>
+            </div>
+            <hr className="separator"/>
 
-            <div><Itemstable/></div>
+            <div><Itemstable /></div>
 
-            <div><TotalCalc/></div>
+            <div><TotalCalc /></div>
         </div>
     )
 }

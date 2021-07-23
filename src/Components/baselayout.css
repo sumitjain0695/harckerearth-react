@@ -1,0 +1,14 @@
+.baselayout{
+    margin: 5% 15%;
+}
+
+.order-summary{
+    text-align: left;
+    color: grey;
+    font-size: 2vw;
+    padding:20px 0 5px;
+}
+
+.separator{
+    opacity: 0.4;
+} 
